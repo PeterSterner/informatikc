@@ -37,3 +37,41 @@ Eleverne skal kunne
 Eleverne skal kunne
 
 - redegøre for innovative it-systemer sammenholdt med egne udviklede it-systemer.
+
+
+## Kernestof
+Gennem kernestoffet skal eleverne opnå faglig fordybelse, viden og kundskaber. Kernestoffet er:
+
+### It-systemers og menneskelig aktivitets gensidige påvirkning
+
+- it-systemer og brugeres gensidige påvirkning i forhold til etik og adfærd 
+- modellering som middel til at forstå et problemområde
+- brugsmønstre til afdækning af brugertypers krav til et it-system 
+- brugertest til kvalitetssikring af et it-system i forhold til brugertypers krav
+
+### It-sikkerhed, netværk og arkitektur
+- Internettets teknologi og sikre kommunikationsformer
+- client-server arkitektur
+
+### Repræsentation og manipulation af data
+- abstraktion og strukturering, begrebs- og datamodeller 
+- data og datatypers repræsentation og manipulation
+- databasers anvendelse og simple databaseforespørgsler
+
+### Programmering
+- funktioner
+- variable, sekvenser, løkker og forgreninger
+
+### Interaktionsdesign
+- design af en brugergrænseflade og den tilhørende interaktion
+- prototyper til i samarbejde med brugerne at udvikle it-systemets interaktionsdesign
+- principper for interaktionsdesign
+
+### Innovation
+- eksempler på og kategorisering af innovative it-systemer.
+
+## Læringsressourcer
+
+- [Informatik - Systime](https://systime.dk/informatik)
+- [Informatik C - Praxis](https://informatik-c-2.praxis.dk/)
+- [UX Design - Systime](https://systime.dk/ux-design)
