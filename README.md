@@ -15,11 +15,8 @@ Eleverne skal kunne
 
 ### It-sikkerhed, netværk og arkitektur
 Eleverne skal kunne
-
--redegøre for beskyttelse af egen digital identitet og egne data på internettet samt redegøre for tekniske og menneskelige
-aspekter af it-sikkerhed 
-- redegøre for generelle principper bag it-systemers arkitekturer ved udarbejdelse af it-systemer og tilpasning af eksisterende
-it-systemer
+- redegøre for beskyttelse af egen digital identitet og egne data på internettet samt redegøre for tekniske og menneskelige aspekter af it-sikkerhed 
+- redegøre for generelle principper bag it-systemers arkitekturer ved udarbejdelse af it-systemer og tilpasning af eksisterende it-systemer
 
 ### Repræsentation og manipulation af data
 Eleverne skal kunne
@@ -29,15 +26,14 @@ Eleverne skal kunne
 ### Programmering
 Eleverne skal kunne 
 
-- identificere basale strukturer i programmeringssprog, modellere programmer og anvende programmering til udvikling af
-simple it-systemer
+- identificere basale strukturer i programmeringssprog, modellere programmer og anvende programmering til udvikling af simple it-systemer
 
 ### Interaktionsdesign
 Eleverne skal kunne
 
-- redegøre for udvalgte elementer i et interaktionsdesign, samt realisere udvalgte interaktionsdesign i et konkret it-system og
-tilpasse eksisterende design og systemer
+- redegøre for udvalgte elementer i et interaktionsdesign, samt realisere udvalgte interaktionsdesign i et konkret it-system og tilpasse eksisterende design og systemer
 
 ### Innovation
 Eleverne skal kunne
-redegøre for innovative it-systemer sammenholdt med egne udviklede it-systemer.
+
+- redegøre for innovative it-systemer sammenholdt med egne udviklede it-systemer.
