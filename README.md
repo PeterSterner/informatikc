@@ -1,5 +1,25 @@
 # Informatik C
 
+## Forløb
+
+### Forløb 1 – Introduktion, modellering & interaktionsdesign (10 lektioner)
+
+| **Lektion** | **Tema**            | **Indhold**                                                            |
+|-------------|---------------------|------------------------------------------------------------------------|
+| 1           | Hvad er informatik? | Fagets mål, eksamen, introduktion til it-systemer og problemstillinger |
+| 2           | Problemforståelse   | Elever vælger problemområde og målgruppe                               |
+| 3           | Persona             | Elever udvikler én persona pr. projekt                                 |
+| 4           | Use-cases           | 2–3 use-cases beskrivelse af brugerens mål                             |
+| 5           | Procesmodeller      | Introduktion til flowdiagrammer                                        |
+| 6           | Modellering         | Elever laver flowdiagram for deres systemidé                           |
+| 7           | UI-principper       | Gestaltlove, heuristikker, brugeroplevelse                             |
+| 8           | Wireframes          | Elever skitserer brugerfladen                                          |
+| 9           | Prototype niveau 1  | Paper prototype bygges                                                 |
+| 10          | Feedback            | Peer-review + forbedring                                               |
+
+
+
+
 ## Faglige mål
 
 ### Konstruktion af it-system som løsning til en problemstilling
