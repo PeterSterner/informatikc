@@ -17,6 +17,28 @@
 | 9           | Prototype niveau 1  | Paper prototype bygges                                                 |
 | 10          | Feedback            | Peer-review + forbedring                                               |
 
+### Forløb 3 - Programmering (15 lektioner)
+
+| **Lektion** | **Tema**                  | **Indhold**                                                          |
+| ----------- | ------------------------- | -------------------------------------------------------------------- |
+| 1           | Flowchart                 | Grundlæggende algoritmer + flowcharts med sekvens/valg/løkke         |
+| 2           | Pseudokode                | Pseudokode for simple algoritmer, oversættelse fra flowchart         |
+| 3           | Introduktion til App Lab  | Opret app, editor, screens, blocks/text mode, events                 |
+| 4           | Sekvenser                 | Hvad er sekvenser? Kode i rækkefølge, simple handlinger              |
+| 5           | Variabler                 | Opret og brug variabler, input/output, små øvelser                   |
+| 6           | Forgreninger (if/else)    | Enkel betingelseslogik, boolean, simple valgprogrammer               |
+| 7           | Løkker                    | Introduktion til gentagelser, for/while, tælleeksempler              |
+| 8           | Funktioner                | Hvad er funktioner? Hvorfor bruge dem? Enkle funktioner + parametre  |
+| 9           | Debugging                 | console.log, fejlfinding, systematisk test                           |
+| 10          | UI-design i App Lab (let) | Simple brugerflader, navigation, inputfelter                         |
+| 11          | Arbejdsdag i App Lab      | Opgaver der træner sekvens, variabler, if/else, løkker og funktioner |
+| 12          | Mini-projekt: Planlægning | Elever vælger app-idé + flowchart + pseudokode                       |
+| 13          | Mini-projekt: Udvikling 1 | Byg app med sekvenser, variabler, if/else                            |
+| 14          | Mini-projekt: Udvikling 2 | Tilføj løkker + funktioner, test og forbedring                       |
+| 15          | Fremvisning & evaluering  | Elever præsenterer app og forklarer deres kodevalg                   |
+
+
+
 
 
 
@@ -57,6 +79,10 @@ Eleverne skal kunne
 Eleverne skal kunne
 
 - redegøre for innovative it-systemer sammenholdt med egne udviklede it-systemer.
+
+## Øvelser
+
+- App Lab opgaver [programmering.md](programmering.md)
 
 
 ## Kernestof
