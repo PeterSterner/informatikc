@@ -1,0 +1,40 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Convert markdown to beamer to pdf via pandoc",
+      "type": "shell",
+      "command": "clear && echo 'Working on converting ${fileBasename}...' && cd  pandoc ${fileBasename} -f markdown -o ${fileBasenameNoExtension}.pdf -t beamer --highlight-style=mystyle.theme --metadata-file=beamer.yaml --slide-level=3 && echo 'Done!'",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Convert markdown to pdf via pandoc",
+      "type": "shell",
+      "command": "clear && echo 'Working on converting ${fileBasename}...' &&  pandoc ${fileBasename} -f markdown --number-sections --template eisvogel --listings -o ${fileBasenameNoExtension}.pdf  && echo 'Done!'",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Convert markdown to pdf via pandoc (template eisvogel.latex in ./local/config/pandoc/templates",
+      "type": "shell",
+      "command": "clear && echo 'Working on converting ${fileBasename}...' && pandoc ${fileBasename} -f markdown --number-sections --template=$HOME/.config/pandoc/templates/eisvogel.latex --listings -o ${fileBasenameNoExtension}.pdf  && echo 'Done!'",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
+/*
+pandoc programmering-eksamensspørgsmål.md -f markdown --number-sections -o programmering-eksamensspørgsmål.pdf --template eisvogel --listings
+*/
