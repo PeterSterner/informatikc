@@ -83,6 +83,7 @@ Eleverne skal kunne
 ## Øvelser
 
 - App Lab opgaver [programmering.md](programmering.md)
+- Flowchart opgaver [drawio.md](drawio.md)
 
 
 ## Kernestof
