@@ -16,29 +16,119 @@ Forskellige video om guide til programmering af AppLab:
 
 ## Opgaver i App Lab
 
-### 1. Skift skærm
+### Skift skærm
 
-Lav to skærme.
-Opgave: Når man trykker på en knap på skærm 1 → skal appen skifte til skærm 2.
+a) Tilføj to skærme  til din app (Screen1 og Screen2).
+b) Tilføj en knap på hver skærm.
+c) Når knappen på Screen1 trykkes → skift til Screen2. Vink: Benyt `setScreen()`.
+d) Når knappen på Screen2 trykkes → skift tilbage til Screen1.
+
+### Beregn sum af to tal (uden variabler)
+
+a) Tilføj to tekstinputfelter og en knap. Vink: Brug `TextInput` komponenten.
+b) Tilføj en etiket til at vise resultatet. Vink: Brug `Label` komponenten.
+c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
+d) Når knappen trykkes skal summen af de to tal vises i etiketten. Vink: Brug `setText()` til at opdatere etiketten.
+
+### Beregn sum af to tal (med variabler)
+
+a) Tilføj to tekstinputfelter og en knap. Vink: Brug `TextInput` komponenten.
+b) Tilføj en etiket til at vise resultatet. Vink: Brug `Label` komponenten.
+c) Opret to variabler til at gemme de to tal. Vink: Brug `let tal1 = 0;` og `let tal2 = 0;` øverst i din kode.
+d) Opret en variabel til at gemme summen. Vink: Brug `let sum = 0;` øverst i din kode.
+e) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
+f) Når knappen trykkes skal de to tal hentes fra tekstinputfelterne, gemmes i variablerne, og summen beregnes og vises i etiketten. Vink: Brug `setText()` til at opdatere etiketten. Konverter tekst til tal ved at bruge `parseInt()` eller `Number()`.
 
 
-### 2. Vis en besked
+### Vis en besked
 
-Lav en knap og et tekstfelt.
-Opgave: Når man trykker på knappen → skal teksten ændres til “Hej verden!”
+a) Tilføje en knap og en etiket.
+b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
+c) Når knappen trykkes skal der vises en besked i etiketten (f.eks. "Hej Verden!"). Vink: Brug `setText()` til at opdatere etiketten.
+
+### Vis en besked baseret på brugerinput
+
+a) Tilføj et tekstinputfelt, en knap og en etiket. Vink: Brug `TextInput`, `Button` og `Label` komponenterne.
+b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
+c) Når knappen trykkes skal teksten fra tekstinputfeltet hentes og vises i etiketten. Vink: Brug `getText()` til at hente teksten og `setText()` til at opdatere etiketten.
 
 
-### 3. Klik-tæller (uden variabler)
+### Skift baggrundsfarve
 
-Lav tre etiketter med tallene 1, 2, 3.
-Opgave: Hver knap viser en bestemt label, som om appen “tæller”.
+a) Tilføj tre knapper: Rød, Grøn, Blå. Vink: Brug `Button` komponenten. 
+b) Tilføj en hændelsesbehandler til hver knap. Vink: Brug `onEvent()`.
+c) Når en knap trykkes skal baggrundsfarven ændres til den valgte farve. Vink: Brug `setProperty()` til at ændre baggrundsfarven.
+
+### Tæl klik
+
+a) Tilføj en knap og en etiket.
+b) Opret en variabel `klikTæller`, som starter på 0. Vink: Brug `let klikTæller = 0;` øverst i din kode
+c) Hver gang knappen trykkes skal `klikTæller` øges med 1, og den nye værdi skal vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Tilføj `klikTæller = klikTæller + 1;` inde i hændelsesbehandleren.
+
+### Rabatberegner
+
+a) Tilføj to tekstinputfelter til pris og rabatprocent. Vink: Brug `TextInput` komponenten.
+b) Tilføj to variabler til at gemme pris og rabatprocent. Vink: Brug `let pris = 0;` og `let rabatProcent = 0;` øverst i din kode.
+c) Tilføj en variabel til at gemme den endelige pris. Vink: Brug `let endeligPris = 0;` øverst i din kode.
+d) Beregn den endelige pris med formlen: `endeligPris = pris - (pris * (rabatProcent / 100));`
+e) Tilføj en knap og en etiket til at vise den endelige pris. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten.
+f) Når knappen trykkes skal den endelige pris beregnes og vises i etiketten.
+
+### BMI-beregner
+
+a) Tilføj to tekstinputfelter til vægt (i kg) og højde (i meter). Vink: Brug `TextInput` komponenten.
+b) Tilføj to variabler til at gemme vægt og højde. Vink: Brug `let vaegt = 0;` og `let hoejde = 0;` øverst i din kode.
+c) Tilføj en variabel til at gemme BMI. Vink: Brug `let bmi = 0;` øverst i din kode.
+d) Beregn BMI med formlen: `bmi = vaegt / (hoejde * hoejde);`
+e) Tilføj en knap og en etiket til at vise BMI.
+f) Når knappen trykkes skal BMI beregnes og vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten.
 
 
-### 4. Mini-farveskifter
+### Antal kalorier
 
-Lav 3 knapper: Rød, Grøn, Blå.
-Opgave: Når man trykker på en af knapperne → ændres baggrundsfarven til netop den farve.
+a) Tilføj tre tekstinputfelter til fedt, kulhydrater og protein (i gram) og tre variabler til at gemme disse værdier. Vink: Brug `let fedtGram = 0;`, `let kulhydratGram = 0;`, `let proteinGram = 0;` øverst i din kode.
+b) Tilføj tre variabler til at gemme kalorier pr. gram for hver makronæringsstof. Vink: Brug `let fedtKalorierPrGram = 9;`, `let kulhydratKalorierPrGram = 4;`, `let proteinKalorierPrGram = 4;` øverst i din kode.
+c) Tilføj en knap og en etiket til at vise det samlede antal kalorier.
+d) Når knappen trykkes → skal det samlede antal kalorier beregnes og vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Beregn kalorier med formlen: `let samletKalorier = (fedtGram * fedtKalorierPrGram) + (kulhydratGram * kulhydratKalorierPrGram) + (proteinGram * proteinKalorierPrGram);`
 
+
+
+### Gæt et tal
+
+a) Opret en variabel `hemmeligtTal`, der indeholder et tilfældigt tal mellem 1 og 100. Vink: Brug `let hemmeligtTal = randomNumber(1, 100);` øverst i din kode.
+b) Tilføj et tekstinputfelt til brugerens gæt og en variabel til at gemme dette gæt. Vink: Brug `let brugerGaet = 0;` øverst i din kode.
+c) Tilføj en knap og en etiket til at vise beskeder til brugeren.
+d) Når knappen trykkes → skal programmet kontrollere brugerens gæt mod `hemmeligtTal` og vise passende beskeder i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug betingede udførsler til at give feedback:
+
+- Hvis brugerGaet er mindre end hemmeligtTal → vis "For lavt! Prøv igen."
+- Hvis brugerGaet er større end hemmeligtTal → vis "For højt! Prøv igen."
+- Hvis brugerGaet er lig med hemmeligtTal → vis "Tillykke! Du gættede rigtigt!".
+
+Man kan tilføje en betinget udførsel i App Lab ved at bruge `if`, `else if` og `else` blokke i kodeeditoren.
+
+
+### Rabat hvis beløbet er over 500
+
+a) Tilføj et tekstinputfelt til beløb og en variabel til at gemme dette beløb. Vink: Brug `let beloeb = 0;` øverst i din kode.
+b) Tilføj en variabel til at gemme den endelige pris. Vink: Brug `let endeligPris = 0;` øverst i din kode.
+c) Tilføj en variabel til at gemme rabatprocenten (10%). Vink: Brug `let rabatProcent = 0.10;` øverst i din kode.
+d) Tilføj en knap og en etiket til at vise den endelige pris.
+e) Når knappen trykkes → skal programmet kontrollere beløbet og anvende en rabat på 10%, hvis beløbet er over 500. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug betingede udførsler (benyt `if/else`) til at beregne den endelige pris:
+- Hvis beloeb er større end 500 → beregn endeligPris som beloeb - (beloeb * 0.10).
+- Ellers → endeligPris er lig med beloeb.
+
+Man kan tilføje en betinget udførsel i App Lab ved at bruge `if`, `else if` og `else` blokke i kodeeditoren.
+
+
+### Lommeregner (Funktioner & Variabler)
+
+a) Tilføj to tekstinputfelter til tal og en variabel til at gemme hvert tal. Vink: Brug `let tal1 = 0;` og `let tal2 = 0;` øverst i din kode.
+b) Tilføj fire knapper til de grundlæggende operationer: Addition, Subtraktion, Multiplikation og Division.
+c) Tilføj en etiket til at vise resultatet.
+d) Opret fire funktioner: addere(), subtrahere(), multiplicere() og dividere(). Hver funktion skal tage to parametre og returnere resultatet af den tilsvarende operation. Vink: Tilføj funktionerne øverst i din kode. Definér dem som f.eks. `function addere(a, b) { return a + b; }`, `function subtrahere(a, b) { return a - b; }` osv.
+e) Når en af knapperne trykkes → skal funktionen kaldes med de to tal og resultatet vises i etiketten. Vink: Brug `onEvent()` til hver knap og `setText()` til etiketten.
+
+<!-- 
 
 ### 5. Emoji-vælger
 
@@ -197,3 +287,4 @@ Mål: Opret en app, hvor brugeren indtaster to tal, og en funktion beregner resu
             Vis resultatet i resultatLabel ved hjælp af setText().
 
 
+-->
