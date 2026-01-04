@@ -1,12 +1,12 @@
 # Programmering
 
 
-# Skift skærm
+## Skift skærm
 
 a) Tilføj to skærme  til din app (Screen1 og Screen2).
 b) Tilføj en knap på hver skærm.
-c) Når knappen på Screen1 trykkes → skift til Screen2. Vink: Benyt `setScreen()`.
-d) Når knappen på Screen2 trykkes → skift tilbage til Screen1.
+c) Når knappen på Screen1 trykkes skift til Screen2. Vink: Benyt `setScreen()`.
+d) Når knappen på Screen2 trykkes skift tilbage til Screen1. Vink: Benyt `setScreen()`.
 
 ## Beregn sum af to tal (uden variabler)
 
@@ -37,7 +37,6 @@ a) Tilføj et tekstinputfelt, en knap og en etiket. Vink: Brug `TextInput`, `But
 b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
 c) Når knappen trykkes skal teksten fra tekstinputfeltet hentes og vises i etiketten. Vink: Brug `getText()` til at hente teksten og `setText()` til at opdatere etiketten.
 
-
 ## Skift baggrundsfarve
 
 a) Tilføj tre knapper: Rød, Grøn, Blå. Vink: Brug `Button` komponenten. 
@@ -47,8 +46,8 @@ c) Når en knap trykkes skal baggrundsfarven ændres til den valgte farve. Vink:
 ## Tæl klik
 
 a) Tilføj en knap og en etiket.
-b) Opret en variabel `klikTæller`, som starter på 0. Vink: Brug `let klikTæller = 0;` øverst i din kode
-c) Hver gang knappen trykkes skal `klikTæller` øges med 1, og den nye værdi skal vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Tilføj `klikTæller = klikTæller + 1;` inde i hændelsesbehandleren.
+b) Opret en variabel `antalKlik`, som starter på 0. Vink: Brug `let antalKlik = 0;` øverst i din kode
+c) Hver gang knappen trykkes skal `antalKlik` øges med 1, og den nye værdi skal vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Tilføj `antalKlik = antalKlik + 1;` inde i hændelsesbehandleren.
 
 ## Rabatberegner
 
@@ -68,15 +67,12 @@ d) Beregn BMI med formlen: `bmi = vaegt / (hoejde * hoejde);`
 e) Tilføj en knap og en etiket til at vise BMI.
 f) Når knappen trykkes skal BMI beregnes og vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten.
 
-
 ## Antal kalorier
 
 a) Tilføj tre tekstinputfelter til fedt, kulhydrater og protein (i gram) og tre variabler til at gemme disse værdier. Vink: Brug `let fedtGram = 0;`, `let kulhydratGram = 0;`, `let proteinGram = 0;` øverst i din kode.
 b) Tilføj tre variabler til at gemme kalorier pr. gram for hver makronæringsstof. Vink: Brug `let fedtKalorierPrGram = 9;`, `let kulhydratKalorierPrGram = 4;`, `let proteinKalorierPrGram = 4;` øverst i din kode.
 c) Tilføj en knap og en etiket til at vise det samlede antal kalorier.
 d) Når knappen trykkes skal det samlede antal kalorier beregnes og vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Beregn kalorier med formlen: `let samletKalorier = (fedtGram * fedtKalorierPrGram) + (kulhydratGram * kulhydratKalorierPrGram) + (proteinGram * proteinKalorierPrGram);`
-
-
 
 ## Gæt et tal
 
@@ -110,7 +106,6 @@ a) Tilføj et tekstinputfelt til temperatur i Celsius og en variabel til at gemm
 b) Tilføj en variabel til at gemme temperaturen i Fahrenheit. Vink: Brug `let fahrenheit = 0;` øverst i din kode.
 c) Tilføj en knap og en etiket til at vise temperaturen i Fahrenheit.
 d) Når knappen trykkes → skal programmet konvertere temperaturen fra Celsius til Fahrenheit og vise resultatet i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug formlen: `fahrenheit = (celsius * 9/5) + 32;`
-
 
 ## Harris-Benedict-ligningen for mænd/kvinder 
 
@@ -151,7 +146,6 @@ c) Tilføj en etiket til at vise resultatet.
 d) Opret fire funktioner: addere(), subtrahere(), multiplicere() og dividere(). Hver funktion skal tage to parametre og returnere resultatet af den tilsvarende operation. Vink: Tilføj funktionerne øverst i din kode. Definér dem som f.eks. `function addere(a, b) { return a + b; }`, `function subtrahere(a, b) { return a - b; }` osv.
 e) Når en af knapperne trykkes → skal funktionen kaldes med de to tal og resultatet vises i etiketten. Vink: Brug `onEvent()` til hver knap og `setText()` til etiketten.
 
-
 ## Tælle til 10
 
 a) Tilføj en knap og en etiket.
@@ -164,8 +158,6 @@ b) Tilføj en knap og en etiket til at vise varerne.
 c) Når knappen trykkes skal programmet gennemgå listen og vise alle varer i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug en løkke (for-løkke) til at gennemgå listen og opbygge en tekststreng med varenavnene.
 d) Udvidelse: Tilføj en tekstinputfelt, hvor brugeren kan indtaste et nyt varenavn, og en knap til at tilføje dette varenavn til listen. Når denne knap trykkes, skal det nye varenavn tilføjes til listen, og den opdaterede liste skal vises i etiketten. Vink: Brug `push()` metoden til at tilføje det nye varenavn til listen.
 e) Udvidelse: Tilføj en knap til at rydde listen. Når denne knap trykkes, skal listen tømmes, og etiketten skal opdateres til at vise en tom liste. Vink: Sæt listen til en tom liste ved at bruge `varer = [];`.
-
-
 
 ## Udskrive varer og deres priser
 

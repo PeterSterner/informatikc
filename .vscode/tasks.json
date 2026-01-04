@@ -6,7 +6,7 @@
     {
       "label": "Convert markdown to beamer to pdf via pandoc",
       "type": "shell",
-      "command": "clear && echo 'Working on converting ${fileBasename}...' && cd  pandoc ${fileBasename} -f markdown -o ${fileBasenameNoExtension}.pdf -t beamer --highlight-style=mystyle.theme --metadata-file=beamer.yaml --slide-level=3 && echo 'Done!'",
+      "command": "clear && echo 'Working on converting ${fileBasename}...' && pandoc ${fileBasename} -f markdown -o ${fileBasenameNoExtension}.pdf -t beamer --highlight-style=mystyle.theme --metadata-file=beamer.yaml --slide-level=3 && echo 'Done!'",
       "problemMatcher": [],
       "group": {
         "kind": "build",
@@ -16,7 +16,7 @@
     {
       "label": "Convert markdown to pdf via pandoc",
       "type": "shell",
-      "command": "clear && echo 'Working on converting ${fileBasename}...' &&  pandoc ${fileBasename} -f markdown --number-sections --template eisvogel --listings -o ${fileBasenameNoExtension}.pdf  && echo 'Done!'",
+      "command": "clear && echo 'Working on converting ${fileBasename}...' && pandoc ${fileBasename} -f markdown --number-sections --template eisvogel --listings -o ${fileBasenameNoExtension}.pdf  && echo 'Done!'",
       "problemMatcher": [],
       "group": {
         "kind": "build",
