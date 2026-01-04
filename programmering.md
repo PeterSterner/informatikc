@@ -1,36 +1,21 @@
 # Programmering
 
-## Videoer om App Lab
-Forskellige video om guide til programmering af AppLab:
 
--	Tilføj skærmbillede og knap: https://www.youtube.com/watch?v=QDf3YnLZvlk 
--	Del app med andre: https://www.youtube.com/watch?v=mGtqgcvZcyE&feature=youtu.be 
--	Kør/test app: https://www.youtube.com/watch?v=B_BllPe1X0I&feature=youtu.be 
--	Sådan indsættes en menu: https://www.youtube.com/watch?v=jK0J9TkjJsQ&feature=youtu.be 
--	Sådan laves en løkke: https://www.youtube.com/watch?v=ZMzWuIr62_A&feature=youtu.be 
--	Sådan laves en if-else sætning: https://www.youtube.com/watch?v=hCVLiyG73lY&feature=youtu.be 
--	Værktøjskassen: https://www.youtube.com/watch?v=PtQI45DKsas&feature=youtu.be 
--	App overføres til tlf: https://www.youtube.com/watch?v=AExcLyCeGd8&list=PLy49ugANG6xgF--1e8EcAV5aeg00Ic9WB&index=10 
--	Alle indsat i playlisten: https://www.youtube.com/playlist?list=PLy49ugANG6xgF--1e8EcAV5aeg00Ic9WB 
-
-
-## Opgaver i App Lab
-
-### Skift skærm
+# Skift skærm
 
 a) Tilføj to skærme  til din app (Screen1 og Screen2).
 b) Tilføj en knap på hver skærm.
 c) Når knappen på Screen1 trykkes → skift til Screen2. Vink: Benyt `setScreen()`.
 d) Når knappen på Screen2 trykkes → skift tilbage til Screen1.
 
-### Beregn sum af to tal (uden variabler)
+## Beregn sum af to tal (uden variabler)
 
 a) Tilføj to tekstinputfelter og en knap. Vink: Brug `TextInput` komponenten.
 b) Tilføj en etiket til at vise resultatet. Vink: Brug `Label` komponenten.
 c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
 d) Når knappen trykkes skal summen af de to tal vises i etiketten. Vink: Brug `setText()` til at opdatere etiketten.
 
-### Beregn sum af to tal (med variabler)
+## Beregn sum af to tal (med variabler)
 
 a) Tilføj to tekstinputfelter og en knap. Vink: Brug `TextInput` komponenten.
 b) Tilføj en etiket til at vise resultatet. Vink: Brug `Label` komponenten.
@@ -40,32 +25,32 @@ e) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
 f) Når knappen trykkes skal de to tal hentes fra tekstinputfelterne, gemmes i variablerne, og summen beregnes og vises i etiketten. Vink: Brug `setText()` til at opdatere etiketten. Konverter tekst til tal ved at bruge `parseInt()` eller `Number()`.
 
 
-### Vis en besked
+## Vis en besked
 
 a) Tilføje en knap og en etiket.
 b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
 c) Når knappen trykkes skal der vises en besked i etiketten (f.eks. "Hej Verden!"). Vink: Brug `setText()` til at opdatere etiketten.
 
-### Vis en besked baseret på brugerinput
+## Vis en besked baseret på brugerinput
 
 a) Tilføj et tekstinputfelt, en knap og en etiket. Vink: Brug `TextInput`, `Button` og `Label` komponenterne.
 b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
 c) Når knappen trykkes skal teksten fra tekstinputfeltet hentes og vises i etiketten. Vink: Brug `getText()` til at hente teksten og `setText()` til at opdatere etiketten.
 
 
-### Skift baggrundsfarve
+## Skift baggrundsfarve
 
 a) Tilføj tre knapper: Rød, Grøn, Blå. Vink: Brug `Button` komponenten. 
 b) Tilføj en hændelsesbehandler til hver knap. Vink: Brug `onEvent()`.
 c) Når en knap trykkes skal baggrundsfarven ændres til den valgte farve. Vink: Brug `setProperty()` til at ændre baggrundsfarven.
 
-### Tæl klik
+## Tæl klik
 
 a) Tilføj en knap og en etiket.
 b) Opret en variabel `klikTæller`, som starter på 0. Vink: Brug `let klikTæller = 0;` øverst i din kode
 c) Hver gang knappen trykkes skal `klikTæller` øges med 1, og den nye værdi skal vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Tilføj `klikTæller = klikTæller + 1;` inde i hændelsesbehandleren.
 
-### Rabatberegner
+## Rabatberegner
 
 a) Tilføj to tekstinputfelter til pris og rabatprocent. Vink: Brug `TextInput` komponenten.
 b) Tilføj to variabler til at gemme pris og rabatprocent. Vink: Brug `let pris = 0;` og `let rabatProcent = 0;` øverst i din kode.
@@ -74,7 +59,7 @@ d) Beregn den endelige pris med formlen: `endeligPris = pris - (pris * (rabatPro
 e) Tilføj en knap og en etiket til at vise den endelige pris. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten.
 f) Når knappen trykkes skal den endelige pris beregnes og vises i etiketten.
 
-### BMI-beregner
+## BMI-beregner
 
 a) Tilføj to tekstinputfelter til vægt (i kg) og højde (i meter). Vink: Brug `TextInput` komponenten.
 b) Tilføj to variabler til at gemme vægt og højde. Vink: Brug `let vaegt = 0;` og `let hoejde = 0;` øverst i din kode.
@@ -84,16 +69,16 @@ e) Tilføj en knap og en etiket til at vise BMI.
 f) Når knappen trykkes skal BMI beregnes og vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten.
 
 
-### Antal kalorier
+## Antal kalorier
 
 a) Tilføj tre tekstinputfelter til fedt, kulhydrater og protein (i gram) og tre variabler til at gemme disse værdier. Vink: Brug `let fedtGram = 0;`, `let kulhydratGram = 0;`, `let proteinGram = 0;` øverst i din kode.
 b) Tilføj tre variabler til at gemme kalorier pr. gram for hver makronæringsstof. Vink: Brug `let fedtKalorierPrGram = 9;`, `let kulhydratKalorierPrGram = 4;`, `let proteinKalorierPrGram = 4;` øverst i din kode.
 c) Tilføj en knap og en etiket til at vise det samlede antal kalorier.
-d) Når knappen trykkes → skal det samlede antal kalorier beregnes og vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Beregn kalorier med formlen: `let samletKalorier = (fedtGram * fedtKalorierPrGram) + (kulhydratGram * kulhydratKalorierPrGram) + (proteinGram * proteinKalorierPrGram);`
+d) Når knappen trykkes skal det samlede antal kalorier beregnes og vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Beregn kalorier med formlen: `let samletKalorier = (fedtGram * fedtKalorierPrGram) + (kulhydratGram * kulhydratKalorierPrGram) + (proteinGram * proteinKalorierPrGram);`
 
 
 
-### Gæt et tal
+## Gæt et tal
 
 a) Opret en variabel `hemmeligtTal`, der indeholder et tilfældigt tal mellem 1 og 100. Vink: Brug `let hemmeligtTal = randomNumber(1, 100);` øverst i din kode.
 b) Tilføj et tekstinputfelt til brugerens gæt og en variabel til at gemme dette gæt. Vink: Brug `let brugerGaet = 0;` øverst i din kode.
@@ -107,7 +92,7 @@ d) Når knappen trykkes → skal programmet kontrollere brugerens gæt mod `hemm
 Man kan tilføje en betinget udførsel i App Lab ved at bruge `if`, `else if` og `else` blokke i kodeeditoren.
 
 
-### Rabat hvis beløbet er over 500
+## Rabat hvis beløbet er over 500
 
 a) Tilføj et tekstinputfelt til beløb og en variabel til at gemme dette beløb. Vink: Brug `let beloeb = 0;` øverst i din kode.
 b) Tilføj en variabel til at gemme den endelige pris. Vink: Brug `let endeligPris = 0;` øverst i din kode.
@@ -119,8 +104,46 @@ e) Når knappen trykkes → skal programmet kontrollere beløbet og anvende en r
 
 Man kan tilføje en betinget udførsel i App Lab ved at bruge `if`, `else if` og `else` blokke i kodeeditoren.
 
+## Temperaturkonvertering
 
-### Lommeregner (Funktioner & Variabler)
+a) Tilføj et tekstinputfelt til temperatur i Celsius og en variabel til at gemme denne temperatur. Vink: Brug `let celsius = 0;` øverst i din kode.
+b) Tilføj en variabel til at gemme temperaturen i Fahrenheit. Vink: Brug `let fahrenheit = 0;` øverst i din kode.
+c) Tilføj en knap og en etiket til at vise temperaturen i Fahrenheit.
+d) Når knappen trykkes → skal programmet konvertere temperaturen fra Celsius til Fahrenheit og vise resultatet i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug formlen: `fahrenheit = (celsius * 9/5) + 32;`
+
+
+## Harris-Benedict-ligningen for mænd/kvinder 
+
+a) Tilføj tre tekstinputfelter til vægt (i kg), højde (i cm) og alder (i år) samt en dropdown-menu til at vælge køn (mand/kvinde). Vink: Brug `TextInput` og `Dropdown` komponenterne.
+b) Tilføj fire variabler til at gemme vægt, højde, alder og køn. Vink: Brug `let vaegt = 0;`, `let hoejde = 0;`, `let alder = 0;` og `let koen = "";` øverst i din kode.
+c) Tilføj en variabel til at gemme det daglige kaloriebehov. Vink: Brug `let kaloriebehov = 0;` øverst i din kode.
+d) Tilføj en knap og en etiket til at vise det daglige kaloriebehov.
+e) Når knappen trykkes skal programmet beregne det daglige kaloriebehov baseret på Harris-Benedict-ligningen og vise resultatet i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug betingede udførsler (benyt `if/else`) til at anvende den korrekte formel:
+- Hvis køn er "mand" → brug formlen: `kaloriebehov = 88.362 + (13.397 * vaegt) + (4.799 * hoejde) - (5.677 * alder);`
+- Ellers hvis køn er "kvinde" → brug formlen: `kaloriebehov = 447.593 + (9.247 * vaegt) + (3.098 * hoejde) - (4.330 * alder);`
+
+## Find største tal
+
+a) Tilføj to tekstinputfelter til tal og to variabler til at gemme disse tal. Vink: Brug `let tal1 = 0;` og `let tal2 = 0;` øverst i din kode.
+b) Tilføj en knap og en etiket til at vise det største tal.
+c) Når knappen trykkes → skal programmet sammenligne de to tal og vise det største i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug betingede udførsler (benyt `if/else`) til at finde det største tal:
+- Hvis tal1 er større end tal2 → vis tal1.
+- Ellers hvis tal2 er større end tal1 → vis tal2.
+
+## Multiplikationstabel
+
+a) Tilføj et tekstinputfelt til et tal og en variabel til at gemme dette tal. Vink: Brug `let tal = 0;` øverst i din kode.
+b) Tilføj en knap og en etiket til at vise multiplikationstabellen.
+c) Når knappen trykkes → skal programmet generere og vise multiplikationstabellen for det indtastede tal (fra 1 til 10) i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug en løkke (for-løkke) til at generere tabellen og opbygge en tekststreng, der indeholder resultaterne.
+
+## Udskriv liste af byer
+
+a) Opret en liste (array) med mindst fem bynavne. Vink: Brug `let byer = ["København", "Aarhus", "Odense", "Aalborg", "Esbjerg"];` øverst i din kode.
+b) Tilføj en knap og en etiket til at vise byerne.
+c) Når knappen trykkes skal programmet gennemgå listen og vise alle byer i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug en løkke (for-løkke) til at gennemgå listen og opbygge en tekststreng med bynavnene.
+
+
+## Lommeregner
 
 a) Tilføj to tekstinputfelter til tal og en variabel til at gemme hvert tal. Vink: Brug `let tal1 = 0;` og `let tal2 = 0;` øverst i din kode.
 b) Tilføj fire knapper til de grundlæggende operationer: Addition, Subtraktion, Multiplikation og Division.
@@ -128,9 +151,35 @@ c) Tilføj en etiket til at vise resultatet.
 d) Opret fire funktioner: addere(), subtrahere(), multiplicere() og dividere(). Hver funktion skal tage to parametre og returnere resultatet af den tilsvarende operation. Vink: Tilføj funktionerne øverst i din kode. Definér dem som f.eks. `function addere(a, b) { return a + b; }`, `function subtrahere(a, b) { return a - b; }` osv.
 e) Når en af knapperne trykkes → skal funktionen kaldes med de to tal og resultatet vises i etiketten. Vink: Brug `onEvent()` til hver knap og `setText()` til etiketten.
 
-<!-- 
 
-### 5. Emoji-vælger
+## Tælle til 10
+
+a) Tilføj en knap og en etiket.
+b) Når knappen trykkes skal en løkke tælle fra 1 til 10, og hvert tal skal vises i etiketten med et mellemrum imellem. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug en for-løkke til at tælle og opbygge en tekststreng med tallene.
+
+## Udskrive alle varer fra en indkøbskurv
+
+a) Opret en liste (array) med mindst fem vare-navne. Vink: Brug `let varer = ["Æbler", "Bananer", "Appelsiner", "Druer", "Jordbær"];` øverst i din kode.
+b) Tilføj en knap og en etiket til at vise varerne.
+c) Når knappen trykkes skal programmet gennemgå listen og vise alle varer i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug en løkke (for-løkke) til at gennemgå listen og opbygge en tekststreng med varenavnene.
+d) Udvidelse: Tilføj en tekstinputfelt, hvor brugeren kan indtaste et nyt varenavn, og en knap til at tilføje dette varenavn til listen. Når denne knap trykkes, skal det nye varenavn tilføjes til listen, og den opdaterede liste skal vises i etiketten. Vink: Brug `push()` metoden til at tilføje det nye varenavn til listen.
+e) Udvidelse: Tilføj en knap til at rydde listen. Når denne knap trykkes, skal listen tømmes, og etiketten skal opdateres til at vise en tom liste. Vink: Sæt listen til en tom liste ved at bruge `varer = [];`.
+
+
+
+## Udskrive varer og deres priser
+
+a) Opret et objekt med mindst fem nøgle-værdi par (f.eks. frugt og deres pris). Vink: Brug `let frugtPriser = { "Æbler": 3, "Bananer": 2, "Appelsiner": 4, "Druer": 5, "Jordbær": 6 };` øverst i din kode.
+b) Tilføj en knap og en etiket til at vise nøgle-værdi parrene.
+c) Når knappen trykkes skal programmet gennemgå objektet og vise alle nøgle-værdi par i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug en for-in løkke til at gennemgå objektet og opbygge en tekststreng med nøgle-værdi parrene.
+
+
+
+
+
+<!--
+
+## 5. Emoji-vælger
 
 Lav 3 knapper og et tekstfelt.
 Opgave:
@@ -142,7 +191,7 @@ Opgave:
     Tryk på “træt” → vis 😴
 
 
-### 6. Funktionen "Blinkende Knap" (Funktioner & betingede udførsler)
+## 6. Funktionen "Blinkende Knap" (Funktioner & betingede udførsler)
 
 Mål: Opret en funktion, der ændrer en knaps farve baseret på dens nuværende farve, når den klikkes.
 
@@ -169,7 +218,7 @@ Mål: Opret en funktion, der ændrer en knaps farve baseret på dens nuværende 
         Brug onEvent til at kalde toggleColor()-funktionen, når der klikkes på blinkKnap.
 
  
-### 7. Score-Tæller med Grænse (Variabler & Betingede Udførsler)
+## 7. Score-Tæller med Grænse (Variabler & Betingede Udførsler)
 
 Mål: Lav en simpel score-tæller, der stopper ved en bestemt grænse.
 
@@ -198,7 +247,7 @@ Mål: Lav en simpel score-tæller, der stopper ved en bestemt grænse.
                 ELLERS (else), sæt teksten på scoreLabel til "Spillet er slut!" eller "Max score nået!".
 
  
-### 8. Gentagen Tegning (Løkker & Funktioner)
+## 8. Gentagen Tegning (Løkker & Funktioner)
 
 Mål: Opret en funktion, der bruger en løkke til at tegne et gentaget mønster (f.eks. kvadrater eller cirkler) på skærmen.
 
@@ -225,7 +274,7 @@ Mål: Opret en funktion, der bruger en løkke til at tegne et gentaget mønster 
         Kald funktionen drawPattern(10) for at tegne 10 elementer.
 
  
-### 9. Timer med Betingelser (Variabler, Løkker/Tidsstyring & Betingede Udførsler)
+## 9. Timer med Betingelser (Variabler, Løkker/Tidsstyring & Betingede Udførsler)
 
 Mål: Lav en nedtællingstimer, der udfører forskellige handlinger, når tiden er under et bestemt niveau.
 
@@ -256,7 +305,7 @@ Mål: Lav en nedtællingstimer, der udfører forskellige handlinger, når tiden 
                 ELLERS (hvis tiden er over 10), skift baggrundsfarven tilbage til "blå" eller en anden standardfarve.
 
  
-### 10. Beregning med Funktioner og Brugerinput (Funktioner & Variabler)
+## 10. Beregning med Funktioner og Brugerinput (Funktioner & Variabler)
 
 Mål: Opret en app, hvor brugeren indtaster to tal, og en funktion beregner resultatet.
 
@@ -285,6 +334,5 @@ Mål: Opret en app, hvor brugeren indtaster to tal, og en funktion beregner resu
             Kald funktionen calculateSum() med de hentede tal.
 
             Vis resultatet i resultatLabel ved hjælp af setText().
-
 
 -->
