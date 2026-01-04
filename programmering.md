@@ -5,8 +5,24 @@
 
 a) Tilføj to skærme  til din app (Screen1 og Screen2).
 b) Tilføj en knap på hver skærm.
-c) Når knappen på Screen1 trykkes skift til Screen2. Vink: Benyt `setScreen()`.
-d) Når knappen på Screen2 trykkes skift tilbage til Screen1. Vink: Benyt `setScreen()`.
+c) Tilføj hændelsesbehandlere til begge knapper. Vink: Brug `onEvent()`, der lytter efter "click" hændelsen. Husk at angive knap-id'et og funktionen, der skal udføres, når knappen trykkes. F.eks. `onEvent("knap1", "click", function() { ... });`. Her skal du erstatte "knap1" med det faktiske id for knappen på den pågældende skærm. De tre prikker (...) skal erstattes med den kode, der skifter skærm. Du kan bruge `setScreen()` funktionen til at skifte mellem skærmene. Husk at angive det korrekte skærm-id som parameter til `setScreen()`.
+d) Når knappen på Screen1 trykkes skift til Screen2. Vink: Benyt `setScreen()`.
+e) Når knappen på Screen2 trykkes skift tilbage til Screen1. Vink: Benyt `setScreen()`.
+
+## Hent tekst fra et tekstinputfelt
+
+a) Tilføj et tekstinputfelt og en knap. Vink: Brug `TextInput` komponenten. Giv tekstinputfeltet et id, f.eks. "tekst".
+b) Tilføj en knap og en etiket. Vink: Husk at give knappen og etiketten id'er, f.eks. "hentKnap" og "visTekst".
+c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()` ligesom før. Dvs. `onEvent("hentKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der henter teksten og opdaterer etiketten.
+d) Når knappen trykkes skal teksten fra tekstinputfeltet hentes og vises i etiketten. Vink: Brug `getText()` til at hente teksten fra tekstinputfeltet og `setText()` til at opdatere etiketten med den hentede tekst. Husk at bruge de korrekte id'er for tekstinputfeltet og etiketten i dine funktioner. F.eks. `let tekst = getText("tekst");` og `setText("visTekst", tekst);`.
+
+## Quiz: Gæt et ord
+
+a) Tilføj et tekstinputfelt, en knap og en etiket. Vink: Brug `TextInput`, `Button` og `Label` komponenterne. Giv tekstinputfeltet et id, f.eks. "gaetOrd".
+b) Opret en variabel `hemmeligtOrd`, der indeholder et ord, som brugeren skal gætte. Vink: Brug `let hemmeligtOrd = "ditOrd";` øverst i din kode. Erstat "ditOrd" med det ord, du ønsker.
+c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("gaetKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der kontrollerer brugerens gæt.
+d) Når knappen trykkes skal programmet kontrollere brugerens gæt mod `hemmeligtOrd`. Vink: Brug `getText()` til at hente brugerens gæt fra tekstinputfeltet. Brug betingede udførsler (if/else) til at sammenligne brugerens gæt med `hemmeligtOrd`. Hvis de er ens, skal etiketten opdateres til at vise en succesbesked (f.eks. "Tillykke! Du gættede rigtigt!"). Hvis de ikke er ens, skal etiketten opdateres til at vise en fejlbesked (f.eks. "Forkert gæt. Prøv igen!"). Brug `setText()` til at opdatere etiketten.
+
 
 ## Beregn sum af to tal (uden variabler)
 
@@ -81,12 +97,11 @@ b) Tilføj et tekstinputfelt til brugerens gæt og en variabel til at gemme dett
 c) Tilføj en knap og en etiket til at vise beskeder til brugeren.
 d) Når knappen trykkes → skal programmet kontrollere brugerens gæt mod `hemmeligtTal` og vise passende beskeder i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug betingede udførsler til at give feedback:
 
-- Hvis brugerGaet er mindre end hemmeligtTal → vis "For lavt! Prøv igen."
-- Hvis brugerGaet er større end hemmeligtTal → vis "For højt! Prøv igen."
-- Hvis brugerGaet er lig med hemmeligtTal → vis "Tillykke! Du gættede rigtigt!".
+- Hvis brugerGaet er mindre end hemmeligtTal vis "For lavt! Prøv igen."
+- Hvis brugerGaet er større end hemmeligtTal vis "For højt! Prøv igen."
+- Hvis brugerGaet er lig med hemmeligtTal vis "Tillykke! Du gættede rigtigt!".
 
-Man kan tilføje en betinget udførsel i App Lab ved at bruge `if`, `else if` og `else` blokke i kodeeditoren.
-
+Man tilføjer en betinget udførsel i App Lab ved at bruge `if`, `else if` og `else` blokke i kodeeditoren.
 
 ## Rabat hvis beløbet er over 500
 
