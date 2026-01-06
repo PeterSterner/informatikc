@@ -9,9 +9,15 @@ c) Tilføj hændelsesbehandlere til begge knapper. Vink: Brug `onEvent()`, der l
 d) Når knappen på Screen1 trykkes skift til Screen2. Vink: Benyt `setScreen()`.
 e) Når knappen på Screen2 trykkes skift tilbage til Screen1. Vink: Benyt `setScreen()`.
 
+## Skift baggrundsfarve
+
+a) Tilføj tre knapper: Rød, Grøn, Blå. Vink: Brug `Button` komponenten og giv hver knap et unikt id, f.eks. "rodKnap", "groenKnap", "blaaKnap".
+b) Tilføj en hændelsesbehandler til hver knap. Vink: Brug `onEvent()`. Dvs. `onEvent("rodKnap", "click", function() { ... });`, `onEvent("groenKnap", "click", function() { ... });`, `onEvent("blaaKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der ændrer baggrundsfarven.
+c) Når en knap trykkes skal baggrundsfarven ændres til den valgte farve. Vink: Brug `setProperty()` til at ændre baggrundsfarven. F.eks. `setProperty("screen1", "background-color", "red");` for rød knap, `setProperty("screen1", "background-color", "green");` for grøn knap, og `setProperty("screen1", "background-color", "blue");` for blå knap. Husk at bruge det korrekte skærm-id i `setProperty()` funktionen.
+
 ## Hent tekst fra et tekstinputfelt
 
-a) Tilføj et tekstinputfelt og en knap. Vink: Brug `TextInput` komponenten. Giv tekstinputfeltet et id, f.eks. "tekst".
+a) Tilføj et tekstinputfelt og en knap. Vink: Brug `TextInput`-komponenten. Giv tekstinputfeltet et id, f.eks. "tekst".
 b) Tilføj en knap og en etiket. Vink: Husk at give knappen og etiketten id'er, f.eks. "hentKnap" og "visTekst".
 c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()` ligesom før. Dvs. `onEvent("hentKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der henter teksten og opdaterer etiketten.
 d) Når knappen trykkes skal teksten fra tekstinputfeltet hentes og vises i etiketten. Vink: Brug `getText()` til at hente teksten fra tekstinputfeltet og `setText()` til at opdatere etiketten med den hentede tekst. Husk at bruge de korrekte id'er for tekstinputfeltet og etiketten i dine funktioner. F.eks. `let tekst = getText("tekst");` og `setText("visTekst", tekst);`.
@@ -43,7 +49,7 @@ f) Når knappen trykkes skal de to tal hentes fra tekstinputfelterne, gemmes i v
 
 ## Vis en besked
 
-a) Tilføje en knap og en etiket.
+a) Tilføje en knap og en etiket. Vink: Brug `Button` og `Label` komponenterne. Husk at give knappen og etiketten id'er, f.eks. "visBeskedKnap" og "beskedEtiket".
 b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
 c) Når knappen trykkes skal der vises en besked i etiketten (f.eks. "Hej Verden!"). Vink: Brug `setText()` til at opdatere etiketten.
 
@@ -53,92 +59,88 @@ a) Tilføj et tekstinputfelt, en knap og en etiket. Vink: Brug `TextInput`, `But
 b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
 c) Når knappen trykkes skal teksten fra tekstinputfeltet hentes og vises i etiketten. Vink: Brug `getText()` til at hente teksten og `setText()` til at opdatere etiketten.
 
-## Skift baggrundsfarve
-
-a) Tilføj tre knapper: Rød, Grøn, Blå. Vink: Brug `Button` komponenten. 
-b) Tilføj en hændelsesbehandler til hver knap. Vink: Brug `onEvent()`.
-c) Når en knap trykkes skal baggrundsfarven ændres til den valgte farve. Vink: Brug `setProperty()` til at ændre baggrundsfarven.
 
 ## Tæl klik
 
-a) Tilføj en knap og en etiket.
+a) Tilføj en knap og en etiket. Vink: Brug `Button` og `Label` komponenterne. Husk at give knappen og etiketten id'er, f.eks. "klikKnap" og "antalEtiket".
 b) Opret en variabel `antalKlik`, som starter på 0. Vink: Brug `let antalKlik = 0;` øverst i din kode
-c) Hver gang knappen trykkes skal `antalKlik` øges med 1, og den nye værdi skal vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Tilføj `antalKlik = antalKlik + 1;` inde i hændelsesbehandleren.
+c) Hver gang knappen trykkes skal `antalKlik` øges med 1, og den nye værdi skal vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Dvs. `onEvent("klikKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med koden, der øger `antalKlik` og opdaterer etiketten. Her kan du bruge `antalKlik = antalKlik + 1;` eller `antalKlik++;` for at øge tælleren og `setText("antalEtiket", antalKlik);` for at vise den nye værdi i etiketten.
 
 ## Rabatberegner
 
-a) Tilføj to tekstinputfelter til pris og rabatprocent. Vink: Brug `TextInput` komponenten.
-b) Tilføj to variabler til at gemme pris og rabatprocent. Vink: Brug `let pris = 0;` og `let rabatProcent = 0;` øverst i din kode.
-c) Tilføj en variabel til at gemme den endelige pris. Vink: Brug `let endeligPris = 0;` øverst i din kode.
-d) Beregn den endelige pris med formlen: `endeligPris = pris - (pris * (rabatProcent / 100));`
-e) Tilføj en knap og en etiket til at vise den endelige pris. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten.
-f) Når knappen trykkes skal den endelige pris beregnes og vises i etiketten.
+a) Tilføj to tekstinputfelter til pris og rabatprocent. Vink: Brug `TextInput` komponenten. Husk at give tekstinputfelterne id'er, f.eks. "prisInput" og "rabatInput".
+b) Tilføj en knap og en etiket til at vise den endelige pris. Vink: Brug `Button` og `Label` komponenterne. Husk at give knappen og etiketten id'er, f.eks. "beregnKnap" og "endeligPrisEtiket".
+c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("beregnKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der beregner den endelige pris.
+    - Brug `getText()` til at hente pris og rabatprocent fra tekstinputfelterne og gem disse værdier i variabler, f.eks. `let pris = parseFloat(getText("prisInput"));` og `let rabatProcent = parseFloat(getText("rabatInput"));`. - Beregn den endelige pris med formlen: `let endeligPris = pris - (pris * (rabatProcent / 100));`. 
+    - Brug `setText()` til at opdatere etiketten med den beregnede endelige pris, f.eks. `setText("endeligPrisEtiket", endeligPris.toFixed(2) + " kr.");`.
+
 
 ## BMI-beregner
 
 a) Tilføj to tekstinputfelter til vægt (i kg) og højde (i meter). Vink: Brug `TextInput` komponenten.
-b) Tilføj to variabler til at gemme vægt og højde. Vink: Brug `let vaegt = 0;` og `let hoejde = 0;` øverst i din kode.
-c) Tilføj en variabel til at gemme BMI. Vink: Brug `let bmi = 0;` øverst i din kode.
-d) Beregn BMI med formlen: `bmi = vaegt / (hoejde * hoejde);`
-e) Tilføj en knap og en etiket til at vise BMI.
-f) Når knappen trykkes skal BMI beregnes og vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten.
+b) Tilføj en knap og en etiket til at vise BMI. Vink: Brug `Button` og `Label` komponenterne. Husk at give knappen og etiketten id'er, f.eks. "beregnBMIKnap" og "bmiEtiket".
+c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("beregnBMIKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der beregner BMI.
+d) Når knappen trykkes skal BMI beregnes og vises i etiketten. Vink: Brug `getText()` til at hente vægt og højde fra tekstinputfelterne og gem disse værdier i variabler, f.eks. `let vaegt = parseFloat(getText("vaegtInput"));` og `let hoejde = parseFloat(getText("hoejdeInput"));`. Beregn BMI med formlen: `let bmi = vaegt / (hoejde * hoejde);`. Brug `setText()` til at opdatere etiketten med den beregnede BMI, f.eks. `setText("bmiEtiket", "Dit BMI er: " + bmi.toFixed(2));`.
 
 ## Antal kalorier
 
-a) Tilføj tre tekstinputfelter til fedt, kulhydrater og protein (i gram) og tre variabler til at gemme disse værdier. Vink: Brug `let fedtGram = 0;`, `let kulhydratGram = 0;`, `let proteinGram = 0;` øverst i din kode.
-b) Tilføj tre variabler til at gemme kalorier pr. gram for hver makronæringsstof. Vink: Brug `let fedtKalorierPrGram = 9;`, `let kulhydratKalorierPrGram = 4;`, `let proteinKalorierPrGram = 4;` øverst i din kode.
-c) Tilføj en knap og en etiket til at vise det samlede antal kalorier.
-d) Når knappen trykkes skal det samlede antal kalorier beregnes og vises i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Beregn kalorier med formlen: `let samletKalorier = (fedtGram * fedtKalorierPrGram) + (kulhydratGram * kulhydratKalorierPrGram) + (proteinGram * proteinKalorierPrGram);`
+a) Tilføj tre tekstinputfelter til fedt, kulhydrater og protein (i gram). Vink: Brug `TextInput` komponenten. Husk at give tekstinputfelterne id'er, f.eks. "fedtInput", "kulhydratInput" og "proteinInput".
+b) Tilføj en knap og en etiket til at vise det samlede antal kalorier. Vink: Brug `Button` og `Label` komponenterne. Husk at give knappen og etiketten id'er, f.eks. "beregnKalorierKnap" og "kalorierEtiket".
+c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("beregnKalorierKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der beregner det samlede antal kalorier.
+d) Når knappen trykkes skal det samlede antal kalorier beregnes og vises i etiketten. Vink: Brug `getText()` til at hente fedt, kulhydrater og protein fra tekstinputfelterne og gem disse værdier i variabler, f.eks. `let fedt = parseFloat(getText("fedtInput"));`, `let kulhydrater = parseFloat(getText("kulhydratInput"));` og `let protein = parseFloat(getText("proteinInput"));`. 
+e) Beregn det samlede antal kalorier med formlen: `let samletKalorier = (fedt * 9) + (kulhydrater * 4) + (protein * 4);`. 
+f) Brug `setText()` til at opdatere etiketten med det beregnede antal kalorier, f.eks. `setText("kalorierEtiket", "Samlet antal kalorier: " + samletKalorier);`.
 
 ## Gæt et tal
 
-a) Opret en variabel `hemmeligtTal`, der indeholder et tilfældigt tal mellem 1 og 100. Vink: Brug `let hemmeligtTal = randomNumber(1, 100);` øverst i din kode.
-b) Tilføj et tekstinputfelt til brugerens gæt og en variabel til at gemme dette gæt. Vink: Brug `let brugerGaet = 0;` øverst i din kode.
-c) Tilføj en knap og en etiket til at vise beskeder til brugeren.
-d) Når knappen trykkes → skal programmet kontrollere brugerens gæt mod `hemmeligtTal` og vise passende beskeder i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug betingede udførsler til at give feedback:
+a) Tilføj et tekstinputfelt, en knap og en etiket. Vink: Brug `TextInput`, `Button` og `Label` komponenterne. Husk at give tekstinputfeltet, knappen og etiketten id'er, f.eks. "gaetTalInput", "gaetTalKnap" og "resultatEtiket".
+b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("gaetTalKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der kontrollerer brugerens gæt.
+c) Opret en variabel `hemmeligtTal`, der indeholder et tal mellem 1 og 100, som brugeren skal gætte. Vink: Brug `let hemmeligtTal = 42;`. Erstat 42 med det ønskede tal.
+d) Når knappen trykkes skal programmet kontrollere brugerens gæt mod `hemmeligtTal`. Vink: Brug `getText()` til at hente brugerens gæt fra tekstinputfeltet og gem det i en variabel, f.eks. `let brugerGaet = parseInt(getText("gaetTalInput"));`.
+e) Brug betingede udførsler (if/else if/else) til at sammenligne `brugerGaet` med `hemmeligtTal`. Opdater etiketten med passende beskeder baseret på sammenligningen:
 
 - Hvis brugerGaet er mindre end hemmeligtTal vis "For lavt! Prøv igen."
 - Hvis brugerGaet er større end hemmeligtTal vis "For højt! Prøv igen."
 - Hvis brugerGaet er lig med hemmeligtTal vis "Tillykke! Du gættede rigtigt!".
 
-Man tilføjer en betinget udførsel i App Lab ved at bruge `if`, `else if` og `else` blokke i kodeeditoren.
-
 ## Rabat hvis beløbet er over 500
 
-a) Tilføj et tekstinputfelt til beløb og en variabel til at gemme dette beløb. Vink: Brug `let beloeb = 0;` øverst i din kode.
-b) Tilføj en variabel til at gemme den endelige pris. Vink: Brug `let endeligPris = 0;` øverst i din kode.
-c) Tilføj en variabel til at gemme rabatprocenten (10%). Vink: Brug `let rabatProcent = 0.10;` øverst i din kode.
-d) Tilføj en knap og en etiket til at vise den endelige pris.
-e) Når knappen trykkes → skal programmet kontrollere beløbet og anvende en rabat på 10%, hvis beløbet er over 500. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug betingede udførsler (benyt `if/else`) til at beregne den endelige pris:
-- Hvis beloeb er større end 500 → beregn endeligPris som beloeb - (beloeb * 0.10).
-- Ellers → endeligPris er lig med beloeb.
-
-Man kan tilføje en betinget udførsel i App Lab ved at bruge `if`, `else if` og `else` blokke i kodeeditoren.
+a) Tilføj et tekstinputfelt til beløb, etiket til at vise den endelige pris og en knap. Vink: Brug `TextInput`, `Label` og `Button` komponenterne. Husk at give tekstinputfeltet, knappen og etiketten id'er, f.eks. "belobInput", "beregnPrisKnap" og "endeligPrisEtiket".
+b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("beregnPrisKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der beregner den endelige pris.
+c) Når knappen trykkes skal programmet hente beløbet fra tekstinputfeltet og kontrollere, om det er over 500. Vink: Brug `getText()` til at hente beløbet og gem det i en variabel, f.eks. `let belob = parseFloat(getText("belobInput"));`.
+d) Brug betingede udførsler (if/else) til at anvende rabatten:
+- Hvis belob er større end 500 → beregn den endelige pris med 10% rabat: `let endeligPris = belob * 0.9;`
+- Ellers → den endelige pris er lig med belob: `let endeligPris = belob;`
+e) Brug `setText()` til at opdatere etiketten med den beregnede endelige pris, f.eks. `setText("endeligPrisEtiket", "Endelig pris: " + endeligPris.toFixed(2) + " kr.");`.
 
 ## Temperaturkonvertering
 
-a) Tilføj et tekstinputfelt til temperatur i Celsius og en variabel til at gemme denne temperatur. Vink: Brug `let celsius = 0;` øverst i din kode.
-b) Tilføj en variabel til at gemme temperaturen i Fahrenheit. Vink: Brug `let fahrenheit = 0;` øverst i din kode.
-c) Tilføj en knap og en etiket til at vise temperaturen i Fahrenheit.
-d) Når knappen trykkes → skal programmet konvertere temperaturen fra Celsius til Fahrenheit og vise resultatet i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug formlen: `fahrenheit = (celsius * 9/5) + 32;`
+a) Tilføj et tekstinputfelt til temperatur i Celsius, en knap og en etiket til at vise temperaturen i Fahrenheit. Vink: Brug `TextInput`, `Button` og `Label` komponenterne. Husk at give tekstinputfeltet, knappen og etiketten id'er, f.eks. "celsiusInput", "konverterKnap" og "fahrenheitEtiket".
+b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("konverterKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der konverterer temperaturen.
+c) Når knappen trykkes skal programmet hente temperaturen i Celsius fra tekstinputfeltet. Vink: Brug `getText()` til at hente temperaturen og gem den i en variabel, f.eks. `let celsius = parseFloat(getText("celsiusInput"));`.
+d) Konverter temperaturen til Fahrenheit med formlen: `let fahrenheit = (celsius * 9/5) + 32;`.
+e) Brug `setText()` til at opdatere etiketten med den konverterede temperatur, f.eks. `setText("fahrenheitEtiket", "Temperatur i Fahrenheit: " + fahrenheit.toFixed(2) + " °F");`.
 
 ## Harris-Benedict-ligningen for mænd/kvinder 
 
-a) Tilføj tre tekstinputfelter til vægt (i kg), højde (i cm) og alder (i år) samt en dropdown-menu til at vælge køn (mand/kvinde). Vink: Brug `TextInput` og `Dropdown` komponenterne.
-b) Tilføj fire variabler til at gemme vægt, højde, alder og køn. Vink: Brug `let vaegt = 0;`, `let hoejde = 0;`, `let alder = 0;` og `let koen = "";` øverst i din kode.
-c) Tilføj en variabel til at gemme det daglige kaloriebehov. Vink: Brug `let kaloriebehov = 0;` øverst i din kode.
-d) Tilføj en knap og en etiket til at vise det daglige kaloriebehov.
-e) Når knappen trykkes skal programmet beregne det daglige kaloriebehov baseret på Harris-Benedict-ligningen og vise resultatet i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug betingede udførsler (benyt `if/else`) til at anvende den korrekte formel:
-- Hvis køn er "mand" → brug formlen: `kaloriebehov = 88.362 + (13.397 * vaegt) + (4.799 * hoejde) - (5.677 * alder);`
-- Ellers hvis køn er "kvinde" → brug formlen: `kaloriebehov = 447.593 + (9.247 * vaegt) + (3.098 * hoejde) - (4.330 * alder);`
+a) Tilføj tekstinputfelter til vægt (kg), højde (cm), alder (år) og radioknapper til at vælge køn (mand/kvinde). Vink: Brug `TextInput` og `RadioButton` komponenterne. Husk at give tekstinputfelterne og radioknapperne id'er, f.eks. "vaegtInput", "hoejdeInput", "alderInput", "mandKnap" og "kvindeKnap".
+b) Tilføj en knap og en etiket til at vise det basale stofskifte. Vink: Brug `Button` og `Label` komponenterne. Husk at give knappen og etiketten id'er, f.eks. "beregnBMRKnap" og "bmrEtiket".
+c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("beregnBMRKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der beregner BMR.
+d) Når knappen trykkes skal programmet hente vægt, højde og alder fra tekstinputfelterne og køn fra radioknapperne. Vink: Brug `getText()` til at hente værdierne og gem dem i variabler, f.eks. `let vaegt = parseFloat(getText("vaegtInput"));`, `let hoejde = parseFloat(getText("hoejdeInput"));`, `let alder = parseInt(getText("alderInput"));`, og `let erMand = getChecked("mandKnap");`. Bemærk: `getChecked()` returnerer sandt (true), hvis radioknappen er valgt, ellers falsk (false).
+e) Brug betingede udførsler (if/else) til at beregne BMR baseret på køn:
+- Hvis erMand er sand brug formlen: `let bmr = 88.362 + (13.397 * vaegt) + (4.799 * hoejde) - (5.677 * alder);`
+- Ellers → brug formlen: `let bmr = 447.593 + (9.247 * vaegt) + (3.098 * hoejde) - (4.330 * alder);`
+f) Brug `setText()` til at opdatere etiketten med den beregnede BMR, f.eks. `setText("bmrEtiket", "Dit basale stofskifte (BMR) er: " + bmr.toFixed(2) + " kcal/dag");`.
 
 ## Find største tal
 
-a) Tilføj to tekstinputfelter til tal og to variabler til at gemme disse tal. Vink: Brug `let tal1 = 0;` og `let tal2 = 0;` øverst i din kode.
-b) Tilføj en knap og en etiket til at vise det største tal.
-c) Når knappen trykkes → skal programmet sammenligne de to tal og vise det største i etiketten. Vink: Brug `onEvent()` til knappen og `setText()` til etiketten. Brug betingede udførsler (benyt `if/else`) til at finde det største tal:
-- Hvis tal1 er større end tal2 → vis tal1.
-- Ellers hvis tal2 er større end tal1 → vis tal2.
+a) Tilføj to tekstinputfelter til tal, en knap og en etiket. Vink: Brug `TextInput`, `Button` og `Label` komponenterne. Husk at give tekstinputfelterne, knappen og etiketten id'er, f.eks. "tal1Input", "tal2Input", "findStoersteKnap" og "stoersteEtiket".
+b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("findStoersteKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der finder det største tal.
+c) Når knappen trykkes skal programmet hente de to tal fra tekstinputfelterne. Vink: Brug `getText()` til at hente tallene og gem dem i variabler, f.eks. `let tal1 = parseFloat(getText("tal1Input"));` og `let tal2 = parseFloat(getText("tal2Input"));`.
+d) Brug betingede udførsler (if/else) til at sammenligne de to tal og finde det største:
+- Hvis tal1 er større end tal2 det største tal er tal1.
+- Ellers det største tal er tal2.
+e) Brug `setText()` til at opdatere etiketten med det største tal, f.eks. `setText("stoersteEtiket", "Det største tal er: " + stoersteTal);`, hvor `stoersteTal` er den variabel, der indeholder det største tal.
 
 ## Multiplikationstabel
 
