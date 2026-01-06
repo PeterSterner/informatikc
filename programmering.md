@@ -119,7 +119,7 @@ a) Tilføj et tekstinputfelt til temperatur i Celsius, en knap og en etiket til 
 b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("konverterKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der konverterer temperaturen.
 c) Når knappen trykkes skal programmet hente temperaturen i Celsius fra tekstinputfeltet. Vink: Brug `getText()` til at hente temperaturen og gem den i en variabel, f.eks. `let celsius = parseFloat(getText("celsiusInput"));`.
 d) Konverter temperaturen til Fahrenheit med formlen: `let fahrenheit = (celsius * 9/5) + 32;`.
-e) Brug `setText()` til at opdatere etiketten med den konverterede temperatur, f.eks. `setText("fahrenheitEtiket", "Temperatur i Fahrenheit: " + fahrenheit.toFixed(2) + " °F");`.
+e) Brug `setText()` til at opdatere etiketten med den konverterede temperatur, f.eks. `setText("fahrenheitEtiket", "Temperatur i Fahrenheit: " + fahrenheit.toFixed(2) + " F");`.
 
 ## Harris-Benedict-ligningen for mænd/kvinder 
 
