@@ -30,33 +30,24 @@ c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onE
 d) Når knappen trykkes skal programmet kontrollere brugerens gæt mod `hemmeligtOrd`. Vink: Brug `getText()` til at hente brugerens gæt fra tekstinputfeltet. Brug betingede udførsler (if/else) til at sammenligne brugerens gæt med `hemmeligtOrd`. Hvis de er ens, skal etiketten opdateres til at vise en succesbesked (f.eks. "Tillykke! Du gættede rigtigt!"). Hvis de ikke er ens, skal etiketten opdateres til at vise en fejlbesked (f.eks. "Forkert gæt. Prøv igen!"). Brug `setText()` til at opdatere etiketten.
 
 
-## Beregn sum af to tal (uden variabler)
+## Beregn sum af to tal
 
-a) Tilføj to tekstinputfelter og en knap. Vink: Brug `TextInput` komponenten.
-b) Tilføj en etiket til at vise resultatet. Vink: Brug `Label` komponenten.
-c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
-d) Når knappen trykkes skal summen af de to tal vises i etiketten. Vink: Brug `setText()` til at opdatere etiketten.
-
-## Beregn sum af to tal (med variabler)
-
-a) Tilføj to tekstinputfelter og en knap. Vink: Brug `TextInput` komponenten.
-b) Tilføj en etiket til at vise resultatet. Vink: Brug `Label` komponenten.
-c) Opret to variabler til at gemme de to tal. Vink: Brug `let tal1 = 0;` og `let tal2 = 0;` øverst i din kode.
-d) Opret en variabel til at gemme summen. Vink: Brug `let sum = 0;` øverst i din kode.
-e) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
-f) Når knappen trykkes skal de to tal hentes fra tekstinputfelterne, gemmes i variablerne, og summen beregnes og vises i etiketten. Vink: Brug `setText()` til at opdatere etiketten. Konverter tekst til tal ved at bruge `parseInt()` eller `Number()`.
-
+a) Tilføj to tekstinputfelter og en knap. Vink: Brug `TextInput` komponenten. Husk at give tekstinputfelterne id'er, f.eks. "tal1Input" og "tal2Input" samt knappen id'et "beregnKnap".
+b) Tilføj en etiket til at vise resultatet. Vink: Brug `Label` komponenten og giv etiketten et id, f.eks. "resultatEtiket".
+c) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("beregnKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der beregner summen.
+d) Når knappen trykkes skal programmet hente de to tal fra tekstinputfelterne, beregne summen og vise resultatet i etiketten. Vink: Brug `getText()` til at hente tallene og gem dem i variabler, f.eks. `let tal1 = parseFloat(getText("tal1Input"));` og `let tal2 = parseFloat(getText("tal2Input"));`. 
+e) Beregn summen med `let sum = tal1 + tal2;` og vis resultatet i etiketten med `setText("resultatEtiket", "Summen er: " + sum);`.
 
 ## Vis en besked
 
 a) Tilføje en knap og en etiket. Vink: Brug `Button` og `Label` komponenterne. Husk at give knappen og etiketten id'er, f.eks. "visBeskedKnap" og "beskedEtiket".
-b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
+b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("visBeskedKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der viser beskeden.
 c) Når knappen trykkes skal der vises en besked i etiketten (f.eks. "Hej Verden!"). Vink: Brug `setText()` til at opdatere etiketten.
 
 ## Vis en besked baseret på brugerinput
 
-a) Tilføj et tekstinputfelt, en knap og en etiket. Vink: Brug `TextInput`, `Button` og `Label` komponenterne.
-b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`.
+a) Tilføj et tekstinputfelt, en knap og en etiket. Vink: Brug `TextInput`, `Button` og `Label` komponenterne. Husk at give tekstinputfeltet, knappen og etiketten id'er, f.eks. "inputFelt", "visBeskedKnap" og "beskedEtiket".
+b) Tilføj en hændelsesbehandler til knappen. Vink: Brug `onEvent()`. Dvs. `onEvent("visBeskedKnap", "click", function() { ... });`. De tre prikker (...) skal erstattes med den kode, der henter brugerinput og viser beskeden.
 c) Når knappen trykkes skal teksten fra tekstinputfeltet hentes og vises i etiketten. Vink: Brug `getText()` til at hente teksten og `setText()` til at opdatere etiketten.
 
 
