@@ -10,7 +10,15 @@ c) Prøv at genskabe kode-blokkene i  App Lab.
 d) Test din rabat-beregner med forskellige priser og rabatprocenter for at sikre, at den fungerer korrekt.
 e) Identificer og forklar de forskellige dele af koden, herunder funktioner, variabler, input og output.
 
-## Login-system (betingede udførsler, variabler, sekvenser, input/output)
+## BMI-kalkulator (betingede udførsler, variabler, sekvenser, input/output)
+
+![Billede af BMI i App Lab](billeder/bmi.png)
+
+a) Gennemgå designet og koden i BMI-kalkulator vist på ovenstående figur.
+b) Prøv at genskabe designet  i dit eget projekt i App Lab.
+c) Prøv at genskabe kode-blokkene i  App Lab.
+d) Test din BMI-kalkulator med forskellige vægte og højder for at sikre, at den fungerer korrekt.
+e) Identificer og forklar de forskellige dele af koden, herunder funktioner, variabler, input og output.
 
 ## Skift skærm
 
