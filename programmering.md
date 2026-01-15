@@ -12,7 +12,7 @@ e) Identificer og forklar de forskellige dele af koden, herunder funktioner, var
 
 ## BMI-kalkulator (betingede udførsler, variabler, sekvenser, input/output)
 
-![Billede af BMI i App Lab](billeder/bmi.png)
+![Billede af BMI-kalkulator i App Lab](billeder/bmi.png)
 
 a) Gennemgå designet og koden i BMI-kalkulator vist på ovenstående figur.
 b) Prøv at genskabe designet  i dit eget projekt i App Lab.
