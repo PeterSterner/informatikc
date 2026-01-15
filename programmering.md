@@ -1,5 +1,16 @@
 # Programmering
 
+## Rabat-beregner (funktioner, variabler, sekvenser, input/output)
+
+![Billede af rabat-beregner i App Lab](billeder/rabat-beregner.png)
+
+a) Gennemgå designet og koden i rabat-beregner vist på ovenstående figur.
+b) Prøv at genskabe designet  i dit eget projekt i App Lab.
+c) Prøv at genskabe kode-blokkene i  App Lab.
+d) Test din rabat-beregner med forskellige priser og rabatprocenter for at sikre, at den fungerer korrekt.
+e) Identificer og forklar de forskellige dele af koden, herunder funktioner, variabler, input og output.
+
+## Login-system (betingede udførsler, variabler, sekvenser, input/output)
 
 ## Skift skærm
 
