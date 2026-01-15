@@ -20,6 +20,16 @@ c) Prøv at genskabe kode-blokkene i  App Lab.
 d) Test din BMI-kalkulator med forskellige vægte og højder for at sikre, at den fungerer korrekt.
 e) Identificer og forklar de forskellige dele af koden, herunder funktioner, variabler, input og output.
 
+## Elev-liste (løkker, variabler, sekvenser, input/output)
+
+![Billede af elev-liste i App Lab](billeder/elev-liste.png)
+
+a) Gennemgå designet og koden i elev-liste vist på ovenstående figur.
+b) Prøv at genskabe designet i dit eget projekt i App Lab.
+c) Prøv at genskabe kode-blokkene i App Lab.
+d) Test din elev-liste ved at tilføje og vise forskellige elevnavne for at sikre, at den fungerer korrekt.
+e) Identificer og forklar de forskellige dele af koden, herunder funktioner, variabler, input og output.
+
 ## Skift skærm
 
 a) Tilføj to skærme  til din app (Screen1 og Screen2).
